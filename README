@@ -1,4 +1,8 @@
-SudokuSolver is a C++ library and sample app that can solve any Sudoku game board:
+SudokuSolver is a C++ library and sample app that can solve any Sudoku game board.
+
+This is code that I originally wrote in 2006 and 2007. I recently rediscovered the
+code as a result of inspecting an old hard drive. For the GitHub release, I cleaned
+it up the code a bit to make it cross-compile on both Windows and Unix.
 
 The code is Standard C++ 11 code and should compile most anywhere where your C++
 compiler supports C++ 11. (I've tested Windows and Linux).
@@ -28,7 +32,7 @@ And the corresponding output will show the initial state of the board,
 and a lot of log statements.  The final state of the board is also shown
 if the board is solved.
 
-9 ? 6 | 3 ? 5 | 1 ? ?
+f9 ? 6 | 3 ? 5 | 1 ? ?
 ? ? 5 | ? ? ? | ? 4 ?
 ? ? ? | 9 ? ? | ? ? 6
 ---------------------
