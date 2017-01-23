@@ -1,9 +1,11 @@
 SudokuSolver is a C++ library and sample app that can solve any Sudoku game board:
 
-The code is Standard C++ 11 code and should compile most anywhere. (I've tested Windows and Linux)
+The code is Standard C++ 11 code and should compile most anywhere where your C++
+compiler supports C++ 11. (I've tested Windows and Linux).
 
 Example. Assume you have an input file that represents the initial state of a Sudoku
-board. Such a file is already provided with this source code.
+board with "." used to indicate an unsolved square.
+Such a file is already provided with this source code.
 
     $> cat input.txt
     9.63.51..
@@ -17,7 +19,7 @@ board. Such a file is already provided with this source code.
     ..24.16.3
 
 To compile the code:
-    $> g++ cell.cpp sudokuboard.cpp main.cpp -o solver
+    $> g++ -std=c++11 cell.cpp sudokuboard.cpp main.cpp -o solver
 
 To run the code:
     $> solver input.txt
@@ -55,6 +57,5 @@ TripleSearch - 6 removed from cell at (r=7 c=5)
 5 1 4 | 6 3 9 | 8 2 7
 8 7 2 | 4 5 1 | 6 9 3
 ---------------------
-
 
  
