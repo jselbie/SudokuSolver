@@ -1,18 +1,20 @@
-SudokuSolver is a C++ library and sample app that can solve any Suduko game board
-that can be resolved with standard elimination and deduction logic.  (There are
-some boards that are published on the Internet that claim to be "worlds hardest Suduko"
-but require guessing and backtracking - those our out of scope for this program).
+SudokuSolver is a C++ library and sample app that can solve any Suduko game
+board that can be resolved with standard elimination and deduction logic. This
+is code that I originally wrote in 2006 and 2007. I recently rediscovered the
+code as a result of inspecting an old hard drive. For this GitHub release, I
+cleaned up the code, added modern C++ 11 styles, and made it cross-compile on
+both Windows and Unix.
 
-This is code that I originally wrote in 2006 and 2007. I recently rediscovered the
-code as a result of inspecting an old hard drive. For the GitHub release, I cleaned
- up the code, added modern C++ 11 styles, and made it cross-compile on both Windows and Unix.
+There are some published Suduko puzzles on the Internet that claim to be
+"worlds hardest Suduko" or labeled as "hard", but require the solver to use
+guess work and backtracking - those our out of scope for this program.
 
-The code is Standard C++ 11 code and should compile most anywhere where your C++
-compiler supports C++ 11. (I've tested Windows and Linux).
+The code is Standard C++ 11 code and should compile most anywhere where your
+C++ compiler supports C++ 11. I've tested Windows, Linux, and Mac.
 
-Example. Assume you have an input file that represents the initial state of a Sudoku
-board with "." used to indicate an unsolved square.
-Such a file is already provided with this source code.
+Example. Assume you have an input file that represents the initial state of a
+Sudoku board with "." used to indicate an unsolved square. Such a file is
+already provided with this source code.
 
     $> cat input.txt
     9.63.51..
@@ -28,7 +30,8 @@ Such a file is already provided with this source code.
 To compile the code:
     $> g++ -std=c++11 cell.cpp sudokuboard.cpp main.cpp -o solver
 
-To compile on Windows, simply start a new Visual Studio project add all the *.cpp files to the project.
+To compile on Windows, simply start a new Visual Studio project add all the
+*.cpp files to the project.
 
 To run the code:
     $> ./solver input.txt
