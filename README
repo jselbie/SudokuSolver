@@ -2,7 +2,7 @@ SudokuSolver is a C++ library and sample app that can solve any Sudoku game boar
 
 This is code that I originally wrote in 2006 and 2007. I recently rediscovered the
 code as a result of inspecting an old hard drive. For the GitHub release, I cleaned
-it up the code a bit to make it cross-compile on both Windows and Unix.
+ up the code, added modern C++ 11 styles, and made it cross-compile on both Windows and Unix.
 
 The code is Standard C++ 11 code and should compile most anywhere where your C++
 compiler supports C++ 11. (I've tested Windows and Linux).
