@@ -1,8 +1,11 @@
-SudokuSolver is a C++ library and sample app that can solve any Sudoku game board.
+SudokuSolver is a C++ library and sample app that can solve any Suduko game board
+that can be resolved with standard elimination and deduction logic.  (There are
+some boards that are published on the Internet that claim to be "worlds hardest Suduko"
+but require guessing and backtracking - those our out of scope for this program).
 
 This is code that I originally wrote in 2006 and 2007. I recently rediscovered the
 code as a result of inspecting an old hard drive. For the GitHub release, I cleaned
-it up the code a bit to make it cross-compile on both Windows and Unix.
+ up the code, added modern C++ 11 styles, and made it cross-compile on both Windows and Unix.
 
 The code is Standard C++ 11 code and should compile most anywhere where your C++
 compiler supports C++ 11. (I've tested Windows and Linux).
@@ -25,8 +28,10 @@ Such a file is already provided with this source code.
 To compile the code:
     $> g++ -std=c++11 cell.cpp sudokuboard.cpp main.cpp -o solver
 
+To compile on Windows, simply start a new Visual Studio project add all the *.cpp files to the project.
+
 To run the code:
-    $> solver input.txt
+    $> ./solver input.txt
 
 And the corresponding output will show the initial state of the board,
 and a lot of log statements.  The final state of the board is also shown
@@ -62,4 +67,6 @@ TripleSearch - 6 removed from cell at (r=7 c=5)
 8 7 2 | 4 5 1 | 6 9 3
 ---------------------
 
- 
+Number of scans - 4
+Board has been solved
+Board is valid
