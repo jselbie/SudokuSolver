@@ -1,5 +1,5 @@
 /*
-   Copyright 2011 John Selbie
+   Copyright 2017 John Selbie
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
@@ -11,7 +11,8 @@
    limitations under the License.
 */
 
-#pragma once
+#ifndef SUDOKU_CELL_H
+#define SUDOKU_CELL_H
 
 // A CellSet is simply a set of 9 cells that are either a row, column, or square of the Sudoku Board
 struct CellSet;
@@ -82,7 +83,4 @@ struct CellSet  // set of 9 cells making up a row, column, or square
 
 const uint16_t CELLINIT = 0x01ff;  // 9 bits set
 
-
-
-
-
+#endif
