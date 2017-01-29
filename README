@@ -40,7 +40,7 @@ And the corresponding output will show the initial state of the board,
 and a lot of log statements.  The final state of the board is also shown
 if the board is solved.
 
-f9 ? 6 | 3 ? 5 | 1 ? ?
+9 ? 6 | 3 ? 5 | 1 ? ?
 ? ? 5 | ? ? ? | ? 4 ?
 ? ? ? | 9 ? ? | ? ? 6
 ---------------------
