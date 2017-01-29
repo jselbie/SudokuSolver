@@ -7,7 +7,7 @@ both Windows and Unix.
 
 There are some published Suduko puzzles on the Internet that claim to be
 "worlds hardest Suduko" or labeled as "hard", but require the solver to use
-guess work and backtracking - those our out of scope for this program.
+guess work and backtracking - those are out of scope for this program.
 
 The code is Standard C++ 11 code and should compile most anywhere where your
 C++ compiler supports C++ 11. I've tested Windows, Linux, and Mac.
